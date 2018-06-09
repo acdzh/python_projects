@@ -30,6 +30,17 @@ def ai_get(content,a):
         return out
     if a == 2:
         return o
+    if a == 'n':
+        return negative_prob
+    if a == 'p':
+        return positive_prob
+    if a == 's':
+        return sentiment
+    if a == 'al':
+        alert = ('您当前情绪负面因素较大，请冷静后再水群。（ ' + out)
+        return alert
+    if a== 'j':
+        return result
     
 
 

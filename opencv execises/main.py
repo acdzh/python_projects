@@ -5,7 +5,7 @@ import numpy as np
 def threshBar(x):
    pass
 
-img = cv2.imread("C:\\Users\\acdzh\\Desktop\\Python\\opencv\\1.jpg")
+img = cv2.imread("lena.jpg")
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 ret, thresh = cv2.threshold(gray,0,255,cv2.THRESH_BINARY_INV+cv2.THRESH_OTSU)
 cv2.imshow('Binary Image', thresh)

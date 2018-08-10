@@ -1,6 +1,7 @@
 # qzone spider to find friends 
-# qq空间爬虫生成好友关系网
-----------------------
+## qq空间爬虫生成好友关系网
+
+
 
 1.修改cookie.py里的chromrdriver地址（设置了环境变量的可不修改）。修改账号密码后运行，生成cookie_dict.txt
 

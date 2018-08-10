@@ -13,7 +13,7 @@
 5.enjoy it
 
 
-#已知缺陷
+## 已知缺陷
 
 1.若好友空间不可进或者他屏蔽了发过的说说，会造成遗漏
 
@@ -24,7 +24,7 @@
 4.爬虫太慢了
 
 
-#最终效果
+## 最终效果
 [示例链接点我](http://118.25.100.134)（出于于隐私原因，我把好友昵称稍微做了一个小混淆）
 
 ![效果图](https://github.com/acdzh/python_projects/blob/master/qq_friends_spider/result_example/result.png)
@@ -33,6 +33,6 @@
 ![局部效果图](https://github.com/acdzh/python_projects/blob/master/qq_friends_spider/result_example/result_partial.png)
 
 
-#ps
+## formatps
 
 制图时用到了[echats](http://echarts.baidu.com/)插件，感谢

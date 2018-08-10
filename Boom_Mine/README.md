@@ -19,3 +19,6 @@ win32gui、win32api依赖库
 ```
 	
 扫雷游戏[下载地址](http://saolei.net/Download/Arbiter_0.52.3.zip)
+
+
+如果无法识别窗口位置需将显示缩放比例调为100%

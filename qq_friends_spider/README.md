@@ -34,6 +34,6 @@
 ![局部效果图](https://github.com/acdzh/python_projects/blob/master/qq_friends_spider/result_example/result_partial.png)
 
 
-## formatps
+## ps
 
 制图时用到了[echats](http://echarts.baidu.com/)插件，感谢

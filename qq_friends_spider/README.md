@@ -27,7 +27,7 @@
 ##最终效果
 [示例链接点我](http://118.25.100.134)（出于于隐私原因，我把好友昵称稍微做了一个小混淆）
 
-![效果图](https://github.com/？/show_relation/result.png)
+![效果图](https://github.com/acdzh/python_projects/blob/master/qq_friends_spider/result_example/result.png)
 
 
 ![局部效果图](https://github.com/？/show_relation/result_partial.png)

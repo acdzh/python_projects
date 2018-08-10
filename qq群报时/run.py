@@ -13,7 +13,7 @@ while (1):
         day = time.strftime("%d",time.localtime())
         time_now = time.strftime("%H:%M:%S",time.localtime())
         msg = "现在是北京时间 20"+ year + "年" + mon+"月"+day+"日 "+time_now+"  ---来自三三的沙雕机器人"
-        command = ('qq send group 时代班官方地下组织 ' + msg)
+        command = ('qq send group 官方地下组织 ' + msg)
         os.system(command)
         print(msg)
         time.sleep(80)

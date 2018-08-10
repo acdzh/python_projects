@@ -3,7 +3,7 @@ import time
 import os
 itchat.login()
 
-users = itchat.search_friends("蒋伟博")
+users = itchat.search_friends("acdzh")
 
 userName = users[0]['UserName']
 

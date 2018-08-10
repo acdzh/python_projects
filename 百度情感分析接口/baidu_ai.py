@@ -1,9 +1,9 @@
 from aip import AipNlp
 import json
 
-APP_ID = '11343165'
-API_KEY = 'xCatrDFmNOPB6vhVYqWInKR2'
-SECRET_KEY = '8xEwAxortvHC03G0RavocPIimuzF4AUl'
+APP_ID = '修改'
+API_KEY = '修改'
+SECRET_KEY = '修改'
 client = AipNlp(APP_ID, API_KEY, SECRET_KEY)
 
 def ai_get(content,a):

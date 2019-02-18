@@ -3,8 +3,8 @@ import time
 import requests
 
 wait_time = 1  # 爬取每一张图片的间隔时间，默认为一秒(建议调大点，给网站减轻些压力吧（过于频繁可能会被封禁ip（我没试过
-start_page = 1  # 从第几页开始爬取
-end_page = 2  # 爬取到第几页结束（不包含该页）
+start_page = 20  # 从第几页开始爬取
+end_page = 30  # 爬取到第几页结束（不包含该页）
 
 my_headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',

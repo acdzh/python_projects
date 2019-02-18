@@ -101,7 +101,7 @@ class Qzone:
         url_like += data_like_encode
         res = requests.get(url_like, headers=header, cookies=cookie)
 
-        # 踩坑，这里必须加不然会乱码！！！！çŸ³å®¶åº„å想这样子的乱码！
+        # 踩坑，这里必须加不然会乱码！！！！çŸ³å®¶åº„å向这样子的乱码！
         res.encoding = 'UTF-8'
         r = re.findall('\((.*)\)', res.text, re.S)[0]
         # 将json数据变成字典格式

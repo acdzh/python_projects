@@ -46,7 +46,6 @@ class Konachan:
 
     def get_list(self, page):
         r = requests.get(self._url + str(page), headers=self._headers)
-        print(r.text)
         return json.loads(r.text)
 
     def get_pic(self, url, name):
@@ -130,7 +129,6 @@ if __name__ == "__main__":
     for i in str_rating:
         if i not in my_rating:
             my_rating.append(i)
-    print(my_rating)
 
     k = Konachan(start_page=my_start_page, end_page=my_end_page, rating=my_rating)
     k.start()

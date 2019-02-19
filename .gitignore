@@ -1,2 +1,4 @@
 长文本_分词_词云/Deng.ttf
 长文本_分词_词云/msyh.ttf
+./.idea/*
+./__pycache__/*

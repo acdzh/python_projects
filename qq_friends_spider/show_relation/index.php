@@ -5,11 +5,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>好友关系网络</title>
 <script type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript" src="jquery.min.js">
-</script> 
-<script type="text/javascript" src="echarts.js">
-</script>  <!--导入的为ECharts3的js -->
-
+<!-- <script type="text/javascript" src="jquery.min.js"></script>  -->
+<!-- <script type="text/javascript" src="echarts.js"></script>  导入的为ECharts3的js -->
+<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
 	postChart();

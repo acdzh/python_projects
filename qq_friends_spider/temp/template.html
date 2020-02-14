@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>qq fiends</title>
+    <script src="https://cdn.bootcss.com/echarts/4.4.0-rc.1/echarts.min.js"></script>
+</head>
+
+<body>
+    <div id="main" style="width: 90%; height:900px;"></div>
+</body>
+<script>
+    var myChart = echarts.init(document.getElementById('main'));
+    var option = {
+        title: {
+            text: 'QQ friends',
+        },
+        series: [{
+            type: 'graph',
+            layout: 'force',
+            data: {text=data},
+            links: {text=links},
+            roam: true,
+            label: {
+                position: 'right'
+            },
+            force: {
+                initLayout: 'circular',
+                repulsion: 200
+            },
+            itemStyle: {
+                normal: {
+                    label: {
+                        position: 'top',
+                        show: true, //这里控制是否显示标签（好友的昵称）
+                        textStyle: {
+                            color: '#333' //标签的颜色
+                        }
+                    },
+                    nodeStyle: {
+                        brushType: 'both',
+                        borderColor: 'rgba(255,215,0,0.4)', //点的颜色
+                        borderWidth: 1
+                    },
+                    linkStyle: {
+                        normal: {
+                            color: 'source',
+                            curveness: 0,
+                            type: "solid"
+                        }
+                    },
+                    force: {
+                        edgeLength: [200, 400], //线的长度，这个距离也会受 repulsion，支持设置成数组表达边长的范围
+                        repulsion: 400 //节点之间的斥力因子。值越大则斥力越大
+                    }
+                },
+            },
+            force: {
+                initLayout: 'circular', //初始布局
+                repulsion: 200, //斥力大小
+            },
+
+            hoverAnimation: true, //是否开启鼠标悬停节点的显示动画
+            name: "",
+            type: 'graph', //关系图类型
+            layout: 'force', //引力布局
+            roam: true, //可以拖动
+            draggable: true,
+            focusNodeAdjacency: true, //移到节点高亮显示临边
+            //  legendHoverLink: true,//是否启用图例 hover(悬停) 时的联动高亮。
+            // coordinateSystem: null,//坐标系可选
+            //  xAxisIndex: 0, //x轴坐标 有多种坐标系轴坐标选项
+            //  yAxisIndex: 0, //y轴坐标 
+            // ribbonType: true,
+            useWorker: false,
+            minRadius: 15,
+            maxRadius: 25,
+            gravity: 1.1,
+
+            scaling: 1.1,
+        }]
+    }
+    myChart.setOption(option);
+</script>
+
+</html>

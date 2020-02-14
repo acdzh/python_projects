@@ -7,7 +7,6 @@ import time
 import operator as op
 
 class Qzone:
-
     #算出来gtk
     def get_gtk(self):
         p_skey = cookie['p_skey']
@@ -149,7 +148,7 @@ class Qzone:
             page += 1
             #匹配出_preloadCallback之后的内容
             if len(re.findall('\((.*)\)', res.text)) == 0:
-                记录下没有权限的
+                #记录下没有权限的
                 file_denied.write(name + ': ' + str(qq) + '\n')
                 continue
             r = re.findall('\((.*)\)', res.text)[0]
@@ -263,24 +262,22 @@ class Qzone:
 
 if __name__ == '__main__':
     qzone = Qzone()
-
-    #将关系设置为全局变量以供方便调用
     relationships = []
     header = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:61.0) Gecko/20100101 Firefox/61.0",
         "Accepted-Language": "zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3",
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
     }
-    with open('cookie_dict.txt','r') as f:
+    with open('./temp/cookie_dict.txt','r') as f:
         cookie = json.load(f)
 
     #得到qq列表，
     qq_list = qzone.get_qq()
     # 记录设置空间权限的死鬼
-    file_denied = open('denied_list.txt', 'w', encoding='UTF-8')
+    file_denied = open('./temp/denied_list.txt', 'w', encoding='UTF-8')
     #记录共同好友点赞和评论的记录
-    file_comment = open('comment.txt','w',encoding='UTF-8')
-    file_like = open('like.txt', 'w', encoding='UTF-8')
+    file_comment = open('./temp/comment.txt','w',encoding='UTF-8')
+    file_like = open('./temp/like.txt', 'w', encoding='UTF-8')
     qzone.start()
     file_denied.close()
     file_comment.close()

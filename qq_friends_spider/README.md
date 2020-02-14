@@ -25,8 +25,8 @@
 
 ## 最终效果
 
-![效果图](https://github.com/acdzh/python_projects/blob/master/qq_friends_spider/result_example/result.png)
+![效果图](result_example/result.png)
 
 
-![局部效果图](https://github.com/acdzh/python_projects/blob/master/qq_friends_spider/result_example/result_partial.png)
+![局部效果图](result_example/result_partial.png)
 
